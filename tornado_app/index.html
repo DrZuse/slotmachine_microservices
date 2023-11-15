@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <title>Slot machine app with microservice architecture</title>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.8.0/dist/confetti.browser.min.js">
+    </script>
+</head>
+<body>
+    <div class="logo" id="logo"></div>
+    <div class="slot-machine">
+        <div class="reel" id="reel1"></div>
+        <div class="reel" id="reel2"></div>
+        <div class="reel" id="reel3"></div>
+        <div class="payline"></div>
+        <div id="credit" id="credit"><span>credit: </span> <span id="credit_value"></span></div>
+        <button id="spin-button">Spin</button>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>

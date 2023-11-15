@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.logo {
+    margin: 0px auto;
+    width: 400px;
+    height: 400Px;
+    position: relative;
+    background-image: url("/static/images/logo.jpg");
+}
+
+.slot-machine {
+    margin: 50px auto;
+    width: 400px;
+    position: relative;
+}
+
+.reel {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px solid #000;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    font-size: 36px;
+    line-height: 100px;
+    transition: transform 1s;
+}
+
+.payline {
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+}
+
+#spin-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#credit_value::before {content: "$";}
+
+#credit {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}

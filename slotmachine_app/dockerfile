@@ -1,0 +1,20 @@
+# Use an official Python runtime as a parent image
+FROM python:3.8
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy your Python scripts into the container
+COPY new_user.py spin.py /app/
+
+# Install any dependencies if required
+RUN pip install pika oracledb
+
+# Install supervisord
+RUN apt-get update && apt-get install -y supervisor
+
+# Copy the supervisord configuration file
+COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+
+# Start supervisord
+CMD ["/usr/bin/supervisord"]
