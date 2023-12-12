@@ -1,3 +1,6 @@
+[![Watch the video](https://img.youtube.com/vi/pEfbLCmB3Vg/sddefault.jpg)](https://www.youtube.com/watch?v=pEfbLCmB3Vg)
+
+
 # Project Setup and Deployment
 
 This guide provides instructions for setting up a development environment using Docker for running an Oracle Database, RabbitMQ, and two custom applications - a Tornado web application and a Slot Machine application.
@@ -110,3 +113,4 @@ sudo docker ps --format 'table {{.Names}}\t{{.Command}}\t{{.Status}}'
 This will display the names, commands, and status of the running Docker containers.
 
 Now, your development environment is set up, and you can access the Tornado web application at http://localhost/ and the RabbitMQ management interface at http://localhost:15672/.
+
